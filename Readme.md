@@ -1,17 +1,17 @@
-** Information
+**Information
 
 This project is a course exercise that I made in 2025 during my Erasmus exchnage in france at UBO during the first semester.
 
 it was a guided work with many tutoriels during the lessons.
 
-** important to note
+**important to note
 
 the link to the webiste only works on the intranet of the UBO.
 
 
 
 
-** Bellow is the  Readme file that was submited for evaluation
+**Bellow is the  Readme file that was submited for evaluation
 
 
 # 📄 README — Projet Web ResaWeb
