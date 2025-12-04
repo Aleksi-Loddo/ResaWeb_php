@@ -1,0 +1,77 @@
+/* ================================
+   Navigation
+   ================================ */
+.navigation {
+  padding: 20px 100px;
+  transition: 0.3s ease;
+}
+
+/* nav-bg version */
+.navigation.nav-bg {
+  background-color: #ff6584; /* replace $secondary-color */
+  padding: 15px 100px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .navigation.nav-bg {
+    padding: 15px 20px;
+  }
+
+  .navigation {
+    padding: 20px;
+    background: #ff6584; /* replace $secondary-color */
+  }
+}
+
+/* ================================
+   Navbar
+   ================================ */
+.navbar .nav-item .nav-link {
+  font-family: 'Noto Sans', sans-serif; /* replace $primary-font */
+  padding: 15px;
+  font-size: 18px;
+}
+
+.navbar .nav-item.active {
+  font-weight: bold;
+}
+
+/* ================================
+   Dropdown Menu
+   ================================ */
+.navbar .dropdown-menu {
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+  padding: 15px;
+  border: 0;
+  top: calc(100% - 2px);
+  left: -10px;
+  border-radius: 0;
+  background: #fff;
+  display: none;
+}
+
+.navbar .dropdown-menu.show {
+  display: block !important;
+}
+
+.navbar .dropdown-item {
+  position: relative;
+  color: #222; /* replace $text-color-dark */
+  transition: 0.2s ease;
+  font-family: 'Noto Sans', sans-serif; /* replace $primary-font */
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 0 !important;
+}
+
+.navbar .dropdown-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* ================================
+   Navbar Color Variant
+   ================================ */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; /* replace $white */
+}

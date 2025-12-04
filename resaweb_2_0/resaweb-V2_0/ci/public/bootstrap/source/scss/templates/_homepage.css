@@ -1,0 +1,217 @@
+/* ================================
+   Banner
+   ================================ */
+.banner {
+  min-height: 100vh;
+}
+
+.content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ================================
+   Hover Background Variants
+   ================================ */
+.hover-bg-secondary {
+  transition: 0.2s ease;
+}
+.hover-bg-secondary * {
+  transition: inherit;
+}
+.hover-bg-secondary:hover {
+  background: #ff6584; /* replace $secondary-color */
+}
+.hover-bg-secondary:hover * {
+  color: #fff; /* replace $white */
+}
+.hover-bg-secondary.active {
+  background: #ff6584; /* replace $secondary-color */
+}
+.hover-bg-secondary.active * {
+  color: #fff;
+}
+
+.hover-bg-primary {
+  transition: 0.2s ease;
+}
+.hover-bg-primary * {
+  transition: inherit;
+}
+.hover-bg-primary:hover {
+  background: #6c63ff; /* replace $primary-color */
+}
+.hover-bg-primary:hover * {
+  color: #fff;
+}
+.hover-bg-primary.active {
+  background: #6c63ff; /* replace $primary-color */
+}
+.hover-bg-primary.active * {
+  color: #fff;
+}
+
+/* ================================
+   Icon Boxes
+   ================================ */
+.icon-box {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+}
+
+.icon-box-sm {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+}
+
+/* ================================
+   Icon Watermark Animation
+   ================================ */
+.icon-watermark {
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  transition: inherit;
+}
+
+.card:hover .icon-watermark {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* ================================
+   Background Image
+   ================================ */
+.bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+.bg-image img {
+  height: 100%;
+  max-width: 100%;
+}
+
+/* Hide background image on desktop */
+@media (max-width: 991px) {
+  .bg-image img {
+    display: none;
+  }
+}
+
+/* Show image again on tablet */
+@media (max-width: 767px) {
+  .bg-image img {
+    display: block;
+    height: auto;
+  }
+}
+
+/* ================================
+   Hover Shadow Effect
+   ================================ */
+.hover-shadow::before {
+  transition: 0.3s ease;
+  position: absolute;
+  height: 100%;
+  box-shadow: 0px 33px 49px 0px rgba(190, 193, 228, 0.31);
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  content: "";
+  opacity: 0;
+}
+
+.hover-shadow:hover::before {
+  opacity: 1;
+}
+
+/* ================================
+   Pricing Bottom Shape
+   ================================ */
+.bottom-shape {
+  position: relative;
+  overflow: hidden;
+}
+.bottom-shape * {
+  position: relative;
+  z-index: 1;
+}
+.bottom-shape::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transform: rotate(40deg);
+  background: linear-gradient(90deg, #6c63ff, #9f8fff); /* replace $primary-gradient */
+  left: 0;
+  top: 60%;
+  opacity: 0.5;
+}
+.bottom-shape::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transform: rotate(40deg);
+  background: linear-gradient(90deg, #6c63ff, #9f8fff);
+  left: 20%;
+  top: 55%;
+}
+
+/* ================================
+   Project Section
+   ================================ */
+.project-item {
+  position: relative;
+}
+.project-item:hover .project-hover {
+  visibility: visible;
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.project-hover {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotateX(90deg);
+  transition: 0.3s ease;
+  transform-origin: bottom;
+}
+.project-hover i {
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  border: 1px solid #fff; /* replace $white */
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+}
+.project-hover i:hover {
+  border-color: #6c63ff; /* replace $primary-color */
+}
+
+/* ================================
+   Footer
+   ================================ */
+footer .overlay-image {
+  height: 80%;
+  width: 80%;
+  left: 10%;
+  top: 10%;
+}

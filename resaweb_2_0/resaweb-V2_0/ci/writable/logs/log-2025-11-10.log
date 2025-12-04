@@ -1,0 +1,12 @@
+CRITICAL - 2025-11-10 10:53:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: messageinvite/9F4L7AXYOEYZGCHNYG0D]
+in SYSTEMPATH/Database/BaseConnection.php on line 927.
+ 1 SYSTEMPATH/Model.php(716): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Messagevisiteur.php(14): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Messagevisiteur->getter_message_visiteur()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()

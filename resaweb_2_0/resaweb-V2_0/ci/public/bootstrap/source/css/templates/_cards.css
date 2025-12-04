@@ -1,0 +1,24 @@
+/* ================================
+   Card Styles
+   ================================ */
+.card {
+  border: 0;
+  border-radius: 0;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.card-header {
+  border: 0;
+}
+
+.card-body {
+  border: 0;
+  border-radius: 0;
+}
+
+.card-footer {
+  border: 0;
+}

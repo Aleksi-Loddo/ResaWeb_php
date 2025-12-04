@@ -1,0 +1,97 @@
+/* Button styles */
+.btn {
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: capitalize;
+  padding: 13px 45px;
+  border-radius: 35px;
+  font-weight: 600;
+  border: 1px solid;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0px 18px 18px 0px rgba(20, 28, 91, 0.19);
+}
+
+.btn-lg {
+  font-size: 20px;
+  padding: 20px 90px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6c63ff, #9f8fff);
+  color: #fff;
+  border: 0;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.focus,
+.btn-primary.active {
+  background: linear-gradient(90deg, #6c63ff, #9f8fff);
+  color: #fff;
+  border: 0;
+}
+
+.btn-outline-primary {
+  background: transparent;
+  color: #6c63ff;
+  border-color: #6c63ff;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary.focus,
+.btn-outline-primary.active {
+  background: linear-gradient(90deg, #6c63ff, #9f8fff);
+  color: #fff;
+  border-color: #6c63ff;
+}
+
+.btn-secondary {
+  background: #ff6584;
+  color: #fff;
+  border: 0;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary.focus,
+.btn-secondary.active {
+  background: #ff6584;
+  color: #fff;
+  border: 0;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+.btn-outline-light:hover,
+.btn-outline-light:active,
+.btn-outline-light.focus,
+.btn-outline-light.active {
+  background: #fff;
+  color: #222;
+  border-color: #fff;
+}
+
+.btn-transparent {
+  color: #6c63ff;
+  border: 0;
+  padding-left: 0;
+  background: linear-gradient(90deg, #6c63ff, #9f8fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent.focus,
+.btn-transparent.active {
+  color: #6c63ff;
+  text-decoration: underline;
+  box-shadow: none;
+}
