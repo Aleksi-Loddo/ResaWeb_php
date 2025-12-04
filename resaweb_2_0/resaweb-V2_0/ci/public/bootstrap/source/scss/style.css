@@ -1,0 +1,12 @@
+@import '_variables.css';
+ @import '_mixins.css';
+ @import '_typography.css';
+ @import '_buttons.css';
+ @import '_common.css';
+ @import 'templates/_navigation.css';
+ @import 'templates/_homepage.css';
+ @import 'templates/_otherspage.css';
+ @import 'templates/_cards.css';
+/*!------------------------------------------------------------------ [MAIN STYLESHEET] PROJECT: Project Name VERSION: Versoin Number -------------------------------------------------------------------*/
+/*------------------------------------------------------------------ [TABLE OF CONTENTS] -------------------------------------------------------------------*/
+ 

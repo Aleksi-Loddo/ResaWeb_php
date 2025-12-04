@@ -1,0 +1,27 @@
+CRITICAL - 2025-10-26 12:06:23 --> ArgumentCountError: Too few arguments to function App\Controllers\Accueil::afficher(), 0 passed in /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: accueil/afficher]
+in APPPATH/Controllers/Accueil.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-10-26 12:11:03 --> ArgumentCountError: Too few arguments to function App\Controllers\Accueil::afficher(), 0 passed in /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: accueil/afficher]
+in APPPATH/Controllers/Accueil.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-10-26 12:11:47 --> ArgumentCountError: Too few arguments to function App\Controllers\Accueil::afficher(), 0 passed in /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: accueil/afficher]
+in APPPATH/Controllers/Accueil.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()

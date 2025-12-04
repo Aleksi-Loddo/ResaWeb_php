@@ -1,0 +1,811 @@
+ERROR - 2025-11-06 08:00:39 --> mysqli_sql_exception: Table 'e22501948_db2.t_compte_cpt' doesn't exist in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:00:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'e22501948_db2.t_compte_cpt' doesn't exist
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:00:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'e22501948_db2.t_compte_cpt' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:00:39 --> [Caused by] mysqli_sql_exception: Table 'e22501948_db2.t_compte_cpt' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:04:06 --> mysqli_sql_exception: Unknown column 'com_login' in 'SELECT' in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:04:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_login' in 'SELECT'
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_login' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:06 --> [Caused by] mysqli_sql_exception: Unknown column 'com_login' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:04:12 --> mysqli_sql_exception: Unknown column 'com_login' in 'SELECT' in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:04:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_login' in 'SELECT'
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_login' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:12 --> [Caused by] mysqli_sql_exception: Unknown column 'com_login' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:04:13 --> mysqli_sql_exception: Unknown column 'com_login' in 'SELECT' in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:04:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_login' in 'SELECT'
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_login' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:13 --> [Caused by] mysqli_sql_exception: Unknown column 'com_login' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:04:27 --> mysqli_sql_exception: Unknown column 'com_speudo' in 'SELECT' in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:04:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_speudo' in 'SELECT'
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_speudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:27 --> [Caused by] mysqli_sql_exception: Unknown column 'com_speudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:04:28 --> mysqli_sql_exception: Unknown column 'com_speudo' in 'SELECT' in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:04:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_speudo' in 'SELECT'
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_speudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:28 --> [Caused by] mysqli_sql_exception: Unknown column 'com_speudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:04:29 --> mysqli_sql_exception: Unknown column 'com_speudo' in 'SELECT' in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:04:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_speudo' in 'SELECT'
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_speudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:29 --> [Caused by] mysqli_sql_exception: Unknown column 'com_speudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:04:42 --> mysqli_sql_exception: Unknown column 'com_spseudo' in 'SELECT' in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:04:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_spseudo' in 'SELECT'
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_spseudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:42 --> [Caused by] mysqli_sql_exception: Unknown column 'com_spseudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:04:43 --> mysqli_sql_exception: Unknown column 'com_spseudo' in 'SELECT' in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:04:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_spseudo' in 'SELECT'
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'com_spseudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:43 --> [Caused by] mysqli_sql_exception: Unknown column 'com_spseudo' in 'SELECT'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(17): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(15): App\Models\Db_model->get_all_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:04:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "affichage_comptes.php"
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(17): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:05:45 --> ErrorException: Undefined array key "com_login"
+[Method: GET, Route: compte/lister]
+in APPPATH/Views/affichage_comptes.php on line 9.
+ 1 APPPATH/Views/affichage_comptes.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/2025DERA61/e22501948/public_html/V1/ci/app/Views/affichage_comptes.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Compte.php(17): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:24:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''count_compte'' at line 1 in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(16): App\Models\Db_model->get_num_compte_count()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:24:33 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''count_compte'' at line 1
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(16): App\Models\Db_model->get_num_compte_count()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:24:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''count_compte'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(33): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(16): App\Models\Db_model->get_num_compte_count()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:24:33 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''count_compte'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(33): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(16): App\Models\Db_model->get_num_compte_count()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:25:45 --> mysqli_sql_exception: Table 'e22501948_db2.t_compmte_com' doesn't exist in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Compte.php(16): App\Models\Db_model->get_num_compte_count()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->lister()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:25:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'e22501948_db2.t_compmte_com' doesn't exist
+[Method: GET, Route: compte/lister]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(33): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(16): App\Models\Db_model->get_num_compte_count()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:25:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'e22501948_db2.t_compmte_com' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(33): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(16): App\Models\Db_model->get_num_compte_count()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:25:45 --> [Caused by] mysqli_sql_exception: Table 'e22501948_db2.t_compmte_com' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(33): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(16): App\Models\Db_model->get_num_compte_count()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:26:15 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: compte/lister]
+in APPPATH/Views/affichage_comptes.php on line 8.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(18): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->lister()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:52:49 --> ErrorException: Undefined variable $actu
+[Method: GET, Route: /]
+in APPPATH/Views/affichage_accueil.php on line 294.
+ 1 APPPATH/Views/affichage_accueil.php(294): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/2025DERA61/e22501948/public_html/V1/ci/app/Views/affichage_accueil.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Accueil.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:55:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS actu FROM t_actualite_act' at line 1 in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(34): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Accueil.php(12): App\Models\Db_model->get_all_actualite()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:55:39 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS actu FROM t_actualite_act' at line 1
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(34): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Accueil.php(12): App\Models\Db_model->get_all_actualite()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:55:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS actu FROM t_actualite_act' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(34): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Accueil.php(12): App\Models\Db_model->get_all_actualite()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:55:39 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS actu FROM t_actualite_act' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(34): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Accueil.php(12): App\Models\Db_model->get_all_actualite()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-06 08:57:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS actu FROM t_actualite_act' at line 1 in /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DERA61/e22501948/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DERA61/e22501948/public_html/V1/ci/app/Models/Db_model.php(34): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DERA61/e22501948/public_html/V1/ci/app/Controllers/Accueil.php(12): App\Models\Db_model->get_all_actualite()
+#5 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+#6 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DERA61/e22501948/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DERA61/e22501948/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DERA61/e22501948/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-06 08:57:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS actu FROM t_actualite_act' at line 1
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(34): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Accueil.php(12): App\Models\Db_model->get_all_actualite()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:57:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS actu FROM t_actualite_act' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(34): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Accueil.php(12): App\Models\Db_model->get_all_actualite()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-06 08:57:29 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS actu FROM t_actualite_act' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(34): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Accueil.php(12): App\Models\Db_model->get_all_actualite()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Accueil->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
